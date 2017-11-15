@@ -5,14 +5,13 @@ const withSidePanel = (WrappedComponent, { goBack = false, goTo = false, goToTex
   return class extends Component {
     render(){
       return (
-        <div className='side-panel'>
-          <div>
-            { goBack && <button onClick={this.props.history.goBack}> Go Back </button> }
-            { goTo && <Link to={goTo} > { goToText } </Link> }
-            <h3> Title </h3>
-          </div>
-          <WrappedComponent {...this.props} />
-        </div>
+            <div className='side-panel'>
+              <div className='side-panel-header'>
+                { goBack && <button onClick={this.props.history.goBack}> Go Back </button> }
+                { goTo && <Link to={goTo} > { goToText } </Link> }
+              </div>
+              <WrappedComponent {...this.props} />
+            </div>
       );
     }
   };

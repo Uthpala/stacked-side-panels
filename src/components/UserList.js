@@ -3,9 +3,10 @@ import React from 'react';
 const UserList = () => {
 	return (
 		<div>
+		  <h3> User List </h3>
 			<ul>
-				<li key='1'> Item one </li>
-				<li key='2'> Item two </li>
+				<li key='1'> User one </li>
+				<li key='2'> User two </li>
 			</ul>
 		</div>
 	);

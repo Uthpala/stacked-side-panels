@@ -9,7 +9,11 @@ class App extends Component {
     return (
 			<Router>
         <div className='main'>
-  				<Link to='/link-user'> Link User </Link>
+          <ul>
+            <li>
+              <Link to='/shift/link-user'> Link User </Link>
+            </li>
+          </ul>
           <Routes />
         </div>
 			</Router>

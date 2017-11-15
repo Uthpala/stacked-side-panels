@@ -6,7 +6,7 @@ import AddUser from './components/AddUser';
 
 const userListConfig = {
 	goBack: true,
-	goTo: '/add-user',
+	goTo: '/shift/link-user/add-user',
 	goToText:'Add User'
 };
 
@@ -17,8 +17,8 @@ const addUserConfig = {
 const Routes = () => {
 	return (
 		<div>
-			<Route path='/link-user' component={withSidePanel(UserList, userListConfig)} />
-			<Route path='/add-user' component={withSidePanel(AddUser, addUserConfig)} />
+			<Route path='/shift/link-user' component={withSidePanel(UserList, userListConfig)} />
+			<Route path='/shift/link-user/add-user' component={withSidePanel(AddUser, addUserConfig)} />
 		</div>
 	);
 };
