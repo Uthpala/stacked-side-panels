@@ -7,16 +7,16 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-			<Router>
-        <div className='main'>
-          <ul>
-            <li>
-              <Link to='/shift/link-user'> Link User </Link>
-            </li>
-          </ul>
-          <Routes />
-        </div>
-			</Router>
+	<Router>
+		<div className='main'>
+		  <ul>
+		    <li>
+		      <Link to='/shift/link-user'> Link User </Link>
+		    </li>
+		  </ul>
+		  <Routes />
+		</div>
+	</Router>
     );
   }
 }
